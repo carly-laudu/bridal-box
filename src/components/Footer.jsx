@@ -12,7 +12,7 @@ export function Footer({ go }) {
   return (
     <footer style={{ background: "var(--bb-ink)", color: "var(--bb-paper)", padding: "84px 40px 40px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr 1.2fr", gap: 48, paddingBottom: 60, borderBottom: "1px solid rgba(255,255,255,0.13)" }}>
+        <div className="bb-footer-grid" style={{ paddingBottom: 60, borderBottom: "1px solid rgba(255,255,255,0.13)" }}>
           <div style={{ maxWidth: 280 }}>
             <Monogram size={48} tone="var(--bb-paper)" />
             <p style={{ fontFamily: "var(--font-serif)", fontSize: 27, lineHeight: 1.18, margin: "22px 0 0" }}>For beautiful <span style={{ fontFamily: "var(--font-script)", fontSize: "1.4em", lineHeight: 1 }}>bridalwear</span>.</p>
@@ -43,7 +43,7 @@ export function Footer({ go }) {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 12, paddingTop: 28, fontFamily: "var(--font-sans)", fontSize: 10.5, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--bb-stone)" }}>
+        <div className="bb-footer-base" style={{ paddingTop: 28, fontFamily: "var(--font-sans)", fontSize: 10.5, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--bb-stone)" }}>
           <span>© {new Date().getFullYear()} The Bridal Box · Oxford · By appointment only</span>
           <a href={HOUSE.carHire[1]} target="_blank" rel="noreferrer" style={{ color: "var(--bb-stone)", textDecoration: "none" }}>{HOUSE.carHire[0]} ↗</a>
         </div>

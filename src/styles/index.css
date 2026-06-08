@@ -11,6 +11,26 @@ button { font-family: inherit; }
 .scroller::-webkit-scrollbar { width: 0; height: 0; }
 
 /* Editorial film grain for mood/hero imagery (never on product photography) */
+/* ============ Responsive nav ============ */
+.bb-nav-links { display: flex; gap: 22px; align-items: center; }
+.bb-nav-burger { display: none; }
+@media (max-width: 880px) {
+  .bb-nav-links { display: none; }
+  .bb-nav-burger { display: inline-flex; }
+}
+
+/* ============ Responsive footer ============ */
+.bb-footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 48px; }
+.bb-footer-base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+@media (max-width: 880px) {
+  .bb-footer-grid { grid-template-columns: 1fr 1fr; gap: 40px 32px; }
+  .bb-footer-grid > :first-child { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .bb-footer-grid { grid-template-columns: 1fr; }
+  .bb-footer-base { flex-direction: column; align-items: flex-start; }
+}
+
 .bb-grain {
   position: absolute; inset: 0; pointer-events: none; z-index: 1;
   opacity: 0.17; mix-blend-mode: multiply;
