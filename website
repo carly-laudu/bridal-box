@@ -1,3 +1,0 @@
-git clone <this-session's-repo-url-or-pull-the-branch>
-git remote add origin https://github.com/carly-laudu/bridal-box.git
-git push -u origin main
