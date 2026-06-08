@@ -1,0 +1,97 @@
+/* ============================================================
+   The Bridal Box — Base element defaults & helpers
+   Opt-in: these style bare elements and provide a few utility
+   classes (.bb-*) used across cards and kits. Tokens only.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: var(--weight-light);
+  font-size: var(--type-body);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---- Headings: the display serif ---------------------- */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+  margin: 0 0 var(--space-4);
+  color: var(--text-primary);
+}
+h1 { font-size: var(--type-h1); }
+h2 { font-size: var(--type-h2); }
+h3 { font-size: var(--type-h3); }
+h4 { font-size: var(--type-h4); }
+
+p { margin: 0 0 var(--space-4); text-wrap: pretty; }
+a { color: inherit; }
+
+/* ============================================================
+   Utility classes
+   ============================================================ */
+
+/* Eyebrow / kicker — wide-tracked sans caps */
+.bb-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--type-eyebrow);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Tagline lockup — the FOR BEAUTIFUL BRIDALWEAR treatment */
+.bb-tagline {
+  font-family: var(--font-sans);
+  font-size: var(--type-body-sm);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+/* Display serif headline */
+.bb-display {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-regular);
+  font-size: var(--type-display);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+}
+
+/* Script flourish — use ONCE per composition */
+.bb-script {
+  font-family: var(--font-script);
+  font-weight: var(--weight-regular);
+  line-height: 1;
+}
+
+/* The "BRIDAL" all-caps serif treatment */
+.bb-serif-caps {
+  font-family: var(--font-serif);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Long-form body measure */
+.bb-prose {
+  max-width: var(--container-text);
+  font-size: var(--type-body-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+}
+
+/* Hairline divider */
+.bb-rule {
+  border: 0;
+  border-top: var(--border-width) solid var(--border-hairline);
+  margin: var(--space-6) 0;
+}

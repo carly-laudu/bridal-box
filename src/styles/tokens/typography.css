@@ -1,0 +1,47 @@
+/* ============================================================
+   The Bridal Box — Typography tokens
+   ------------------------------------------------------------
+   Editorial hierarchy: a high-contrast serif for romance,
+   a quiet light sans for everything functional, and the script
+   reserved for a single signature flourish per composition.
+   ============================================================ */
+
+:root {
+  /* ---- Families ----------------------------------------- */
+  --font-serif:  "Rose & Asmora", "Didot", "Bodoni MT", "Times New Roman", serif;
+  --font-script: "Starglace", "Snell Roundhand", "Apple Chancery", cursive;
+  --font-sans:   "Neue Haas Display", "Helvetica Neue", "Inter", system-ui, sans-serif;
+
+  /* ---- Display / heading scale (serif) ------------------ */
+  --type-display:  clamp(3.5rem, 8vw, 7rem);   /* hero serif */
+  --type-h1:       clamp(2.75rem, 5vw, 4.5rem);
+  --type-h2:       clamp(2rem, 3.5vw, 3rem);
+  --type-h3:       1.75rem;
+  --type-h4:       1.25rem;
+
+  /* ---- Body & UI scale (sans) --------------------------- */
+  --type-body-lg:  1.125rem;   /* 18px intro paragraphs */
+  --type-body:     1rem;       /* 16px default */
+  --type-body-sm:  0.875rem;   /* 14px */
+  --type-caption:  0.75rem;    /* 12px meta */
+
+  /* ---- Eyebrow / label (wide-tracked sans caps) --------- */
+  --type-eyebrow:  0.6875rem;  /* 11px */
+
+  /* ---- Line heights ------------------------------------- */
+  --leading-tight:  1.04;   /* display serif */
+  --leading-snug:   1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.7;    /* long-form body */
+
+  /* ---- Letter-spacing ----------------------------------- */
+  --tracking-display: 0.01em;
+  --tracking-tight:   -0.01em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.18em;   /* eyebrows, taglines, nav */
+  --tracking-wider:   0.32em;   /* the FOR BEAUTIFUL BRIDALWEAR feel */
+
+  /* ---- Weights ------------------------------------------ */
+  --weight-light:   300;
+  --weight-regular: 400;
+}

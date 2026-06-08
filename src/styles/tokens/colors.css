@@ -1,0 +1,71 @@
+/* ============================================================
+   The Bridal Box — Color
+   ------------------------------------------------------------
+   A cool, muted wardrobe: warm near-black ink, soft papers,
+   and the signature blush-beige. Everything is understated —
+   no saturated colour, ever. Accents are whispered, not shouted.
+   ============================================================ */
+
+:root {
+  /* ---- Base palette ------------------------------------- */
+
+  /* Ink — warm near-blacks (never pure #000) */
+  --bb-ink:          #1c1916;   /* primary text, the editorial black */
+  --bb-ink-soft:     #3a3530;   /* secondary text on light */
+  --bb-ink-muted:    #6b635b;   /* captions, meta, placeholders */
+
+  /* Paper — warm off-whites */
+  --bb-paper:        #faf7f3;   /* lightest surface / "white" */
+  --bb-paper-warm:   #f3ece4;   /* warm card surface */
+
+  /* Blush — the signature beige family */
+  --bb-blush:        #eaded9;   /* hero brand surface (the beige) */
+  --bb-blush-deep:   #e0d3cb;   /* the monogram beige / deeper blush */
+  --bb-blush-shadow: #d6c7bd;   /* pressed / hovered blush */
+
+  /* Taupe & stone — muted warm neutrals */
+  --bb-taupe:        #c9b8ac;   /* borders on blush, dividers */
+  --bb-stone:        #a99c90;   /* muted detail, disabled ink */
+  --bb-sand-line:    #ddd0c6;   /* hairline on paper */
+
+  /* Cool muted accents — used sparingly (something blue) */
+  --bb-mist:         #b7c0c2;   /* dusty cool grey-blue */
+  --bb-sage:         #9aa595;   /* muted eucalyptus green */
+
+  /* Pure values for imagery overlays */
+  --bb-black:        #000000;
+  --bb-white:        #ffffff;
+
+  /* ---- Semantic aliases --------------------------------- */
+
+  /* Text */
+  --text-primary:    var(--bb-ink);
+  --text-secondary:  var(--bb-ink-soft);
+  --text-muted:      var(--bb-ink-muted);
+  --text-on-dark:    var(--bb-paper);
+  --text-on-blush:   var(--bb-ink);
+
+  /* Surfaces */
+  --surface-page:    var(--bb-paper);
+  --surface-card:    var(--bb-paper-warm);
+  --surface-blush:   var(--bb-blush);
+  --surface-ink:     var(--bb-ink);
+
+  /* Lines & borders */
+  --border-hairline: var(--bb-sand-line);
+  --border-strong:   var(--bb-ink);
+  --border-on-blush: var(--bb-taupe);
+
+  /* Interactive (the brand is quiet — ink is the "primary") */
+  --action-fill:        var(--bb-ink);
+  --action-fill-hover:  #2c2722;
+  --action-fill-press:  #100e0c;
+  --action-on-fill:     var(--bb-paper);
+
+  --action-ghost-border: var(--bb-ink);
+  --action-ghost-hover:  var(--bb-blush-deep);
+
+  /* Image overlay tints */
+  --overlay-ink-60:  rgba(20, 17, 14, 0.60);
+  --overlay-ink-30:  rgba(20, 17, 14, 0.30);
+}
