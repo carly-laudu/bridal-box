@@ -1,0 +1,38 @@
+/* ============================================================
+   The Bridal Box — Webfonts
+   ------------------------------------------------------------
+   Three brand typefaces:
+   • Rose & Asmora  → high-contrast display SERIF (headlines,
+                       the "BRIDAL" wordmark). The brand's voice.
+   • Starglace      → calligraphy SCRIPT (the "Box" signature,
+                       sparing romantic accents only).
+   • Neue Haas Display Light → the workhorse SANS (body, UI,
+                       wide-tracked all-caps labels & taglines).
+                       The brand guide also references
+                       "Bicyclette Thin" — Neue Haas Display Light
+                       is the supplied / licensed substitute.
+   ============================================================ */
+
+@font-face {
+  font-family: "Rose & Asmora";
+  src: url("/assets/fonts/RoseAndAsmora.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Starglace";
+  src: url("/assets/fonts/Starglace.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("/assets/fonts/NeueHaasDisplayLight.ttf") format("truetype");
+  font-weight: 300 400;
+  font-style: normal;
+  font-display: swap;
+}
